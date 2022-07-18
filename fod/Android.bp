@@ -14,9 +14,9 @@
 // limitations under the License.
 
 cc_binary {
-    name: "vendor.lineage.biometrics.fingerprint.inscreen@1.0-service.xiaomi_msmnile",
-    vintf_fragments: ["vendor.lineage.biometrics.fingerprint.inscreen@1.0-service.xiaomi_msmnile.xml"],
-    init_rc: ["vendor.lineage.biometrics.fingerprint.inscreen@1.0-service.xiaomi_msmnile.rc"],
+    name: "vendor.mokee.biometrics.fingerprint.inscreen@1.0-service.xiaomi_msmnile",
+    vintf_fragments: ["vendor.mokee.biometrics.fingerprint.inscreen@1.0-service.xiaomi_msmnile.xml"],
+    init_rc: ["vendor.mokee.biometrics.fingerprint.inscreen@1.0-service.xiaomi_msmnile.rc"],
     defaults: ["hidl_defaults"],
     relative_install_path: "hw",
     srcs: [
@@ -31,7 +31,7 @@ cc_binary {
         "liblog",
         "libutils",
         "//hardware/xiaomi:vendor.goodix.hardware.biometrics.fingerprint@2.1",
-        "vendor.lineage.biometrics.fingerprint.inscreen@1.0",
+        "vendor.mokee.biometrics.fingerprint.inscreen@1.0",
         "//hardware/xiaomi:vendor.xiaomi.hardware.fingerprintextension@1.0",
     ],
 }

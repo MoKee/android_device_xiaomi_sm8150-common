@@ -12,7 +12,7 @@ endif
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-lineage
+    $(LOCAL_PATH)/overlay-mokee
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
@@ -196,7 +196,7 @@ endif
 # Fingerprint
 ifeq ($(TARGET_HAS_FOD),true)
 PRODUCT_PACKAGES += \
-    vendor.lineage.biometrics.fingerprint.inscreen@1.0-service.xiaomi_msmnile
+    vendor.mokee.biometrics.fingerprint.inscreen@1.0-service.xiaomi_msmnile
 endif
 
 PRODUCT_PACKAGES += \
@@ -246,7 +246,7 @@ PRODUCT_PACKAGES += \
 
 # LiveDisplay
 PRODUCT_PACKAGES += \
-    vendor.lineage.livedisplay@2.0-service-sdm
+    vendor.mokee.livedisplay@2.0-service-sdm
 
 # Media
 PRODUCT_PACKAGES += \
@@ -377,7 +377,7 @@ PRODUCT_BOOT_JARS += \
 
 # Trust
 PRODUCT_PACKAGES += \
-    vendor.lineage.trust@1.0-service
+    vendor.mokee.trust@1.0-service
 
 # USB
 PRODUCT_PACKAGES += \
